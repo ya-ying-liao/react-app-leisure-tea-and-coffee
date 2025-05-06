@@ -1,0 +1,64 @@
+/* Navbar.css */
+.navbar {
+    background-color: #2F5B44;
+    justify-content: center;
+    /* 水平置中 */
+    width: 100%;
+    /* height: 40px; */
+    padding: 30px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    /* 可選陰影效果 */
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* max-width: 100%; */
+    margin: 0 auto;
+    /* padding: 10px 100; */
+}
+
+.navbar a {
+    margin: 0 15px;
+    /* color: #D7BC73; */
+    color: #F1EDE3;
+    font-weight: bold;
+    font-family: Arial;
+    transition: color 0.3s
+    
+}
+
+.link {
+    text-decoration: none;
+    /* color: #333; */
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+.link:hover {
+    color: #D7BC73;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    left: 24px;
+    height: 60px;
+    width: auto;
+}
+
+.nav-links {
+    display: inline-flex;
+    gap: 30px;
+}

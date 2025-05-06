@@ -1,0 +1,26 @@
+.location-info {
+    padding: 24px;
+    text-align: center;
+    font-size: 18px;
+    color: #4b4b4b;
+    line-height: 1.8;
+}
+
+.address {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #2f5b44;
+}
+
+.hours {
+    margin: 4px 0;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 48px;
+    padding: 0 16px;
+}

@@ -1,0 +1,57 @@
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 60px;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* 手機版自動換行 */
+  /* gap: 40px; */
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Logo和Facebook icon一排 */
+.footer-logo-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* margin-bottom: 20px; */
+}
+
+/* Logo字 */
+.logo-text {
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* FB icon 顏色跟hover */
+.social-icon {
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #1877f2; /* Facebook 藍色 */
+}
+
+/* 電話 & 地址 */
+.footer-info {
+  margin-bottom: 10px;
+}
+
+.footer-column h3 {
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.footer-column p {
+  margin: 5px 0;
+}
