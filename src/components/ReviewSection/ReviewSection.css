@@ -1,61 +1,62 @@
 .review-section {
   display: flex;
-  /* justify-content: space-between; */
-  align-items: flex-start;
-  padding: 60px 40px;
+  flex-direction: row;
+  height: fit-content;
+  justify-content: space-between;
+  padding: 48px 64px;
+  box-sizing: border-box;
   background-color: #fff;
-  /* gap: 48px; */
-  flex-wrap: wrap;
+  gap: 36px;
+
+}
+
+.review-title-image {
+  height: 100%;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 36px;
 }
 
 .review-title {
-  padding: 48px 48px;
+  width: 50%;
+  margin-top: 36px;
   margin-left: 36px;
-  
   font-family: 'Oswald', sans-serif;
   color: #2F5B44;
-}
-
-.review-title h1 {
   font-size: 40px;
-  color: #2F5B44;
-  width: 280px;
-  /* margin-bottom: 5px; */
-  line-height: 1;
+  line-height: 1.5;
 }
 
-.review-image img {
-  width: 250px;
+.review-image {
+  width: 50%;
   height: auto;
+  max-width: 280px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin-left: 36px;
 }
 
 .review-content {
-  flex: 1;
-  min-width: 300px;
-  max-width: 500px;
+  width: 50%;
+  height: 400px;
   position: relative;
-  margin-left: 80px;
+  margin-left: 24px;
 }
+
 
 .review-stars {
   font-size: 20px;
   color: #E0C873;
-  /* 跟你網站金色系一致 */
   margin-bottom: 10px;
-  /* 和標題之間留點空隙 */
 }
 
 .review-content h3 {
   font-size: 22px;
-  margin-bottom: 10px;
   color: #1C4532;
+  margin-bottom: 10px;
 }
 
 .review-text {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.6;
   margin-bottom: 10px;
   color: #4b4b4b;
@@ -74,10 +75,8 @@
 
 .review-nav-buttons {
   position: absolute;
-  top: 200px;
-  /* 往上推一點，離底部20px */
   right: 0px;
-  /* 往左推一點，離右邊20px */
+  bottom: 0px;
   display: flex;
   gap: 10px;
 
@@ -94,4 +93,65 @@
 .review-nav-buttons button:hover {
   background-color: #3C7A5B;
   color: #FFFBE9;
+}
+
+@media (max-width: 900px) {
+  .review-section {
+    padding: 36px 48px;
+    flex-direction: column;
+  }
+
+  .review-title-image {
+    width: 100%;
+  }
+
+  .review-title {
+    font-size: 36px;
+  }
+
+  .review-image {
+    width: 40%;
+    height: auto;
+  }
+
+  .review-content {
+    width: 100%;
+
+  }
+
+  .review-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .review-section {
+    padding: 24px 36px;
+  }
+
+  .review-title-image {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review-image {
+    width: 70%;
+    height: auto;
+  }
+
+  .review-title {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    margin: 0;
+  }
+
+  .review-content {
+    height: fit-content;
+  }
+
+  .review-text {
+    font-size: 16px;
+  }
+
 }

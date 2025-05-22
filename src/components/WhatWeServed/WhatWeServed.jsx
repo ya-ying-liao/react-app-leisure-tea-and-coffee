@@ -25,9 +25,9 @@ export default function WhatWeServed() {
       <div className="served-grid">
         {servedItems.map((item, index) => (
           <div className="served-card" key={index}>
-            <div className="served-image-wrapper">
-              <img src={item.image} alt={item.title} />
-            </div>
+            {/* <div className="served-image-wrapper"> */}
+              <img src={item.image} alt={item.title} className="served-image"/>
+            {/* </div> */}
             <p>{item.title}</p>
           </div>
         ))}

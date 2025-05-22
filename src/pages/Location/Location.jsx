@@ -3,6 +3,8 @@ import HeroSection from '../../components/HeroSection/HeroSection';
 
 
 import heroImage from '../../assets/HeroSection/hero-location.jpg';
+import Footer from '../../components/Footer/Footer';
+
 import './Location.css';
 
 
@@ -15,7 +17,7 @@ export default function Location() {
       <HeroSection
         image={heroImage}
         title="Location"
-        // darken
+      // darken
       />
 
       <div className="location-info">
@@ -36,7 +38,7 @@ export default function Location() {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-
+      <Footer />
 
     </div>)
 }

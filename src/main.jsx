@@ -8,10 +8,12 @@ createRoot(document.getElementById('root')).render(
   // <StrictMode>
   //   <App />
   // </StrictMode>,
+  
 
 
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/react-leisure-tea-and-coffee/">
+
       <App />
     </BrowserRouter>
   </StrictMode>

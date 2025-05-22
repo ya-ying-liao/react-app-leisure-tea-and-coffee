@@ -1,14 +1,13 @@
 .location-info {
     padding: 24px;
     text-align: center;
-    font-size: 18px;
+    font-size: 24px;
     color: #4b4b4b;
     line-height: 1.8;
 }
 
 .address {
     font-weight: bold;
-    font-size: 20px;
     margin-bottom: 12px;
     color: #2f5b44;
 }
@@ -23,4 +22,25 @@
     align-items: center;
     margin: 48px;
     padding: 0 16px;
+}
+
+.map-container iframe {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+}
+
+@media (max-width: 900px) {
+    .location-info {
+        font-size: 20px;
+    }
+
+  
+  
+  @media (max-width: 480px) {
+    .location-info {
+        font-size: 18px;
+    }
+  
+  }
 }

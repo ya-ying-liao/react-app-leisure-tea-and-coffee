@@ -1,5 +1,26 @@
-.menu-page {
-    background-color: #f1ede3; /* or any color you like */
-    min-height: 100vh;
-    padding-bottom: 48px;
+.menu-section {
+  background-color: #f1ede3;
+  padding: 48px 64px;
+  /* or any color you like */
+  /* min-height: 100vh;
+  padding-bottom: 48px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box; */
+}
+
+@media (max-width: 900px) {
+  .menu-section{
+    padding: 36px 48px;
+    
   }
+}
+
+@media (max-width: 480px) {
+  .menu-section {
+    padding: 24px 36px;
+    
+  }
+
+}

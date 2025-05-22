@@ -2,29 +2,29 @@
   background-color: #333;
   color: #fff;
   padding: 40px 60px;
+  width: 100vw; /* use viewport width */
+  box-sizing: border-box;
+  
 }
 
 .footer-columns {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; /* 手機版自動換行 */
-  /* gap: 40px; */
+  box-sizing: border-box;
+  /* flex-wrap: wrap; */
+  gap: 24px;
 }
 
 .footer-column {
   flex: 1;
-  min-width: 250px;
 }
 
-/* Logo和Facebook icon一排 */
 .footer-logo-row {
   display: flex;
   align-items: center;
   gap: 10px;
-  /* margin-bottom: 20px; */
 }
 
-/* Logo字 */
 .logo-text {
   font-family: 'Oswald', sans-serif;
   font-size: 24px;
@@ -55,3 +55,14 @@
 .footer-column p {
   margin: 5px 0;
 }
+
+@media (max-width: 900px) {
+  .footer-columns {
+flex-direction: column;  }
+}
+
+/* @media (max-width: 480px) {
+  .footer-columns {
+    
+  }
+} */

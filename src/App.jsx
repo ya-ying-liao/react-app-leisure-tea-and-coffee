@@ -9,9 +9,12 @@ import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 
 
+
+
 function App() {
   return (
     <>
+      
       {/* <Navbar /> */}
       <Routes>
         <Route path="/" element={<Home />} />
@@ -19,8 +22,8 @@ function App() {
         <Route path="/menu" element={<Menu />} />
         <Route path="/location" element={<Location />} />
       </Routes>
-      <Footer />
       
+
     </>
   );
 }

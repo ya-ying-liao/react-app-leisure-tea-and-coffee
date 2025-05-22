@@ -44,24 +44,19 @@ const ReviewSection = () => {
 
   return (
     <div className="review-section">
-
-      <div className="review-title">
-        <h1>What Our </h1>
-        <h1>Customers Say</h1>
-      </div>
-
-      <div className="review-image">
-        <img src={reviewImage} alt="Customer" />
+      <div className="review-title-image">
+        <h1 className="review-title">What Our Customers Say</h1>
+        <img src={reviewImage} alt="Customer" className="review-image" />
       </div>
 
       <div className="review-content">
-      <motion.div
-        key={currentIndex} // 每次索引变化时触发动画
-        initial={{ opacity: 0 }} // 初始状态：完全透明
-        animate={{ opacity: 1 }}  // 动画结束时，完全显示
-        exit={{ opacity: 0 }}    // 离开时，完全透明
-        transition={{ duration: 0.6 }} // 动画持续时间
-      >
+        <motion.div
+          key={currentIndex} // 每次索引变化时触发动画
+          initial={{ opacity: 0 }} // 初始状态：完全透明
+          animate={{ opacity: 1 }}  // 动画结束时，完全显示
+          exit={{ opacity: 0 }}    // 离开时，完全透明
+          transition={{ duration: 0.6 }} // 动画持续时间
+        >
 
           <div className="review-stars">
             ⭐ ⭐ ⭐ ⭐ ⭐
@@ -71,12 +66,12 @@ const ReviewSection = () => {
           <hr />
           <p className="review-name">{currentReview.name}</p>
 
-
-          <div className="review-nav-buttons">
-            <button onClick={handlePrev}><ChevronLeft size={20} /></button>
-            <button onClick={handleNext}><ChevronRight size={20} /></button>
-          </div>
         </motion.div>
+        <div className="review-nav-buttons">
+          <button onClick={handlePrev}><ChevronLeft size={20} /></button>
+          <button onClick={handleNext}><ChevronRight size={20} /></button>
+        </div>
+
       </div>
     </div>
   );

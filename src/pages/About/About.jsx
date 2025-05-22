@@ -7,6 +7,8 @@ import StorySection from '../../components/StorySection/StorySection';
 import storyImage from '../../assets/StorySection/story-image.jpg';
 
 import WhatWeServed from '../../components/WhatWeServed/WhatWeServed';
+import Footer from '../../components/Footer/Footer';
+
 
 
 export default function About() {
@@ -18,7 +20,6 @@ export default function About() {
         title="About Us"
         subTitle=""
         script=""
-      // darken
 
       />
 
@@ -29,6 +30,9 @@ export default function About() {
       />
 
       <WhatWeServed />
+
+
+      <Footer />
 
     </div>)
 }
