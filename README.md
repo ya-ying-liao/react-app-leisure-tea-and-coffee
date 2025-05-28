@@ -1,12 +1,43 @@
-# React + Vite
+# ☕ Tea & Coffee Store Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive, multi-page React website for a fictional tea and coffee store. Built with React and Vite, this project showcases a clean, modern design and emphasizes smooth user experience, performance, and responsiveness.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- Built with React and Vite for fast development and performance.
+- Multi-page navigation with React Router (Home, Menu, About, Contact).
+- Responsive layout — mobile-friendly and adapts to various screen sizes.
+- Hero sections, tabbed menu, image galleries, and informative footers.
+- Modular component structure for scalability and reusability.
+- Deployed via GitHub Pages for easy access and sharing.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🖥️ Demo
+[View Live Website](https://ya-ying-liao.github.io/react-app-leisure-tea-and-coffee/)
+
+## 📂 Project Structure
+```
+src/
+├── assets/           # Images and media
+├── components/       # Reusable UI components (Navbar, Footer, HeroSection, etc.)
+├── pages/            # Page components (Home, Menu, About, Contact)
+├── App.jsx           # Root component
+├── main.jsx          # Entry point
+└── styles/           # Global and component-specific CSS
+```
+
+## 🛠️ Technologies Used
+
+- React
+- Vite
+- React Router DOM
+- HTML5 & CSS3
+- JavaScript (ES6+)
+
+## 🧑‍💻 Author
+Created by YA-YING LIAO
+
+## 📜 License
+MIT License. Copyright (c) 2025 YA-YING LIAO
+
+
